@@ -1,0 +1,30 @@
+PROJECT: XTOBE FINAL GUARDIAN 2.0
+WORKSPACE: C:\Users\Nishan\projects\xtobe-ai-personal-assistant
+ROLE: Senior Tauri / React / TypeScript / Motion UI Engineer
+
+TASK: Integrate the supplied XTOBE FINAL GUARDIAN 2.0 artwork into the desktop app as a cinematic startup + voice mock flow. Build Phase A/B UI only (no live mic, no cloud APIs, no auth, no external actions). Reuse existing components if present.
+
+DELIVER:
+- Cinematic Guardian startup screen (idle → activate → listening mock → verification visual → transition to Mission Control)
+- Pulsating cyan core, concentric hex rings, lightweight orange particle network
+- Voice panel mock with transcript, language selector (English, Tamil, Sinhala, Arabic RTL, Hindi, Urdu, Malayalam), mic/stop buttons
+- Guardian status overlay, emblem badge, reduced-motion support
+- Frontend state machine file (guardianMachine.ts)
+- Components: GuardianStartup.tsx, GuardianCore.tsx, ParticleField.tsx, GuardianVoice.tsx, VerificationPanel.tsx, GuardianTransition.tsx
+- Localized UI strings (guardian_strings.json)
+- Tests: TypeScript type check, frontend build, route rendering, state transitions, reduced-motion behavior
+
+CONSTRAINTS:
+- All authentication/voice/network functionality must be mocked and labeled "DEMO VISUAL STATE" or "AUTHENTICATION INTEGRATION PENDING"
+- No GitHub writes, no external integrations, no payment or OS credential changes
+- Respect asset: apps/desktop/src/assets/guardian/xtobe-final-guardian-2.0.png (use this image; do not replace it)
+
+RUN CHECKS LOCALLY:
+- npm install && npm run build (apps/desktop)
+- TypeScript checks (tsc)
+- UI smoke tests and state-machine tests
+- If available, verify Tauri launch locally
+
+COMMIT:
+- Use message: feat: implement XTOBE Final Guardian 2.0 activation and voice interface
+- Do not push without explicit authorization
